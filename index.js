@@ -401,7 +401,7 @@ function html_directions_transit(json, res)
 function user_location(res)
 {
     speech = "You are currently here:\n";
-    var url = 'https://maps.googleapis.com/maps/api/geocode/json?latlng='+lat+','+lng+'&key='+geocodingAPI;
+    var url = 'https://maps.googleapis.com/maps/api/geocode/json?latlng='+lat+','+lng+'&key='+'AIzaSyDPnkwcJUnFjlZu0S4dqsMS3esYMdF1Oy0';
     helper.httpsGet(url, function(response) {
         var result = JSON.parse(response);
         speech += result.results[0].formatted_address;
